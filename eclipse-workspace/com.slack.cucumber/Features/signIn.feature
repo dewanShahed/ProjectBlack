@@ -1,8 +1,8 @@
 @SignInPage
-Feature: signIn
+Feature: feature to test signIn functionality
   I want to signIn slack
 
-  Scenario Outline: verify project name
+  Scenario Outline: check signIn is successful with valid credentials
     Given I am in slack login page
     When I want enter <userName> and <passWord> and click signin button
     And click the iconProfile

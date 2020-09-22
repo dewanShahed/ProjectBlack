@@ -39,12 +39,7 @@ public class HomeModel extends ModelBase {
 	    	List<WebElement> netChannel=driver.findElements(By.xpath("//*[@class='p-channel_sidebar__name']"));
 	    	return netChannel;
 	    }
-	 
-	 //channel validation
-//	 public List<WebElement> channelsValidation(){
-//		 List<WebElement> channels=driver.findElements(By.xpath("//*[@class='p-channel_sidebar__name']"));
-//		 return channels;
-//	 }
+	
     public WebElement  goCreateChannel(){
 	WebElement status=driver.findElement(By.xpath("//div[contains(text(),'Create a channel')]"));
 	return status;

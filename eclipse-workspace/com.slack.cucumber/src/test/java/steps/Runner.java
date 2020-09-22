@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "Features", glue = "steps", plugin = { "pretty",
 "json:target/report/json/output.json", "html:target/report/html" }
 //, dryRun = true, strict = true
-, tags={"@SignInPage,HomePage"}
+, tags={"@signInPage"}
 )   
 public class Runner {
 

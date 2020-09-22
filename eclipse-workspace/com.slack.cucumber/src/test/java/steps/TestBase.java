@@ -4,14 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import Page.HomePage;
+import Page.PostMessagePage;
 import Page.SignInPage;
-
 
 public class TestBase {
 	
-	static WebDriver driver;
-	static SignInPage sip;
-	static HomePage hp;
+    public static WebDriver driver;
+	public static SignInPage sip;
+	public static HomePage hp;
+	public static PostMessagePage pmp;
 	
 	public static void initialization() {
 		System.setProperty("webdriver.chrome.driver","driver/chromedriver.exe");
@@ -31,7 +32,8 @@ public class TestBase {
 		return hp;
 		
 	}
-	
-	
-	
-}
+    public PostMessagePage  getPostMessagePage() {
+    	pmp=new PostMessagePage(driver);
+    	
+    	return pmp;
+    }}
